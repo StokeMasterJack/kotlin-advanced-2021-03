@@ -1,6 +1,8 @@
 package kws.b_contracts
 
 import kws.util.VF
+import kotlin.contracts.InvocationKind
+import kotlin.contracts.contract
 
 
 /*
@@ -25,12 +27,17 @@ fun prof1() {
 
 fun prof2() {
     val ret = daveProfile { slow(2) }
+
     println("ret: $ret")
 }
 
 fun main(args: Array<String>) {
     prof1()
     prof2()
+
+//    callOneEvery10Seconds {
+//        println(111)
+//    }
 }
 
 // in util.kt:
@@ -43,9 +50,14 @@ fun daveProfileOriginal(block: VF /* ()->Unit */) {
 }
 
 fun <R> daveProfile(block: () -> R): R {
+    contract {
+        callsInPlace(block, kind = InvocationKind.EXACTLY_ONCE)
+    }
     val t1 = System.currentTimeMillis()
     val retVal: R = block()
     val t2 = System.currentTimeMillis()
     println("Delta: " + (t2 - t1))
     return retVal
 }
+
+
