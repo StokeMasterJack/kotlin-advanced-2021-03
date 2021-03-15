@@ -1,0 +1,176 @@
+.gradle/
+build
+.idea/
+out/
+
+# security related stuff
+*.pem
+clean-install.conf
+
+# generated - spa.jsp and tc/index.jsp
+war/src/main/webapp/tc/index.jsp
+war/src/main/webapp/spa.jsp
+
+
+#dd
+
+# tmp and scratch files
+#tmp/
+tmp.js
+tmp.xml
+tmp.html
+tmp.java
+tmp.sql
+tmp.json
+scratch/
+
+# OS generated files - OS X
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+Icon
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# OS generated files - Windows
+ehthumbs.db
+Thumbs.db
+
+# generated files - java/kotlin
+*.class
+*.jar
+*.war
+*.ear
+
+# generated files - dart
+.dart_tool/
+.packages
+.pub/
+build/
+pubspec.lock
+doc/api/
+
+# generated files - windows 
+*.com
+*.dll
+*.exe
+
+# generated files - linux/unix 
+*.o
+*.so
+
+# generated files - maven
+target/
+*.ser
+*.ec
+
+# React
+node_modules/
+react/node_modules/
+webpackCache/
+.tmp
+.sass-cache
+
+# Bower
+bower_components/
+
+# package/zip files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sqlite
+
+# IntelliJ - user-specific
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+*.iws
+
+# IntelliJ - Generated files
+.idea/**/contentModel.xml
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+
+
+
+.idea/fileTemplates/
+.idea/statistic.xml
+war/src/main/java/com/ramko/fileUpload/
+
+.idea/shelf
+/confluence/target
+/dependencies/repo
+/android.tests.dependencies
+/dependencies/android.tests.dependencies
+/dist
+/local
+/gh-pages
+/ideaSDK
+/clionSDK
+/android-studio/sdk
+/tmp
+workspace.xml
+*.versionsBackup
+/idea/testData/debugger/tinyApp/classes*
+/jps-plugin/testData/kannotator
+/js/js.translator/testData/out/
+/js/js.translator/testData/out-min/
+/js/js.translator/testData/out-pir/
+!**/src/**/build
+!**/test/**/build
+!**/testData/**/*.iml
+.idea/libraries/Gradle*.xml
+.idea/libraries/Maven*.xml
+.idea/artifacts/PILL_*.xml
+.idea/artifacts/KotlinPlugin.xml
+.idea/modules
+.idea/runConfigurations/JPS_*.xml
+.idea/runConfigurations/PILL_*.xml
+.idea/libraries
+.idea/modules.xml
+.idea/gradle.xml
+.idea/compiler.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/.name
+.idea/artifacts/dist_auto_*
+.idea/artifacts/dist.xml
+.idea/artifacts/ideaPlugin.xml
+.idea/artifacts/kotlinc.xml
+.idea/artifacts/kotlin_compiler_jar.xml
+.idea/artifacts/kotlin_plugin_jar.xml
+.idea/artifacts/kotlin_jps_plugin_jar.xml
+.idea/artifacts/kotlin_daemon_client_jar.xml
+.idea/artifacts/kotlin_imports_dumper_compiler_plugin_jar.xml
+.idea/artifacts/kotlin_main_kts_jar.xml
+.idea/artifacts/kotlin_compiler_client_embeddable_jar.xml
+.idea/artifacts/kotlin_reflect_jar.xml
+.idea/artifacts/kotlin_stdlib_js_ir_*
+.idea/artifacts/kotlin_test_js_ir_*
+.idea/artifacts/kotlin_stdlib_wasm_*
+.idea/jarRepositories.xml
+kotlin-ultimate/
+.rpt2_cache/
+libraries/tools/kotlin-test-js-runner/lib/
+local.properties
+buildSrcTmp/
+distTmp/
+outTmp/
+
+
