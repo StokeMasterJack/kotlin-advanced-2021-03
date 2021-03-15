@@ -3,7 +3,6 @@ package kws.c_coroutines.a_basics_plus_launch
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import kotlin.random.Random
 
 
 /*
@@ -45,10 +44,6 @@ private suspend fun slowThing2() {
 
 private suspend fun slowThing1() {
     println("Starting job1")
-    val r = Random.nextInt(5)
-    if (r == 2) {
-        throw IllegalArgumentException("ddd")
-    }
     delay(5000)
     println("Ending job1")
 }

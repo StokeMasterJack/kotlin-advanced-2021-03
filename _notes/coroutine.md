@@ -9,7 +9,10 @@
 ### Async programming can be ugly
 
 
-# Launch-ish
+# Coroutine Builders (launch,async)
+The only thing yopu can call from a Coroutine Builders (launch,async):
+    suspend function
+    another coroutine 
 
 ### CoroutineScope.launch - starts a new coroutine and returns a job (but no return value)
     Fire and forget - does not have a result
@@ -18,6 +21,10 @@
 ### CoroutineScope.async - starts a new coroutine and returns a job (but no return value)
     If you need to compute a result
 
+
+launch and async must be called from a coroutineScope
+
+
 ## Structured Concurrency
 
 ### Coroutine Scopes - hierarchy
@@ -25,8 +32,9 @@
     coroutineScope1{
         
         coroutineScope2a{
-
+            
         }
+
         coroutineScope2b{
 
         }
@@ -38,6 +46,11 @@ coroutineScope1 will not complete until it's inner coroutineScopes (coroutineSco
 
 ## Suspend 
 
+
+## Dispatchers
+Dispatchers.Default  //primary goto
+Dispatchers.Main        //for updating the ui
+Dispatchers.IO       // lots of blocking IO (like reading from a socket)    
 
 
 block:  CoroutineScope.() -> Unit
