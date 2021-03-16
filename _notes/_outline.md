@@ -14,13 +14,8 @@ reified: don't erase type params
     Structured concurrency
     Dispatchers
     Flow
+    StateFlow
     Coroutine testing
-
-## Arrow
-    Option
-    Try
-    Either
-    Validated
 
 ## Kotlin Multi-Platform
     High level how it works/what kind of code to share
@@ -51,3 +46,9 @@ reified: don't erase type params
         Call Logging
         WebSockets
     Deploying
+
+## Arrow
+    Option
+    Try
+    Either
+    Validated

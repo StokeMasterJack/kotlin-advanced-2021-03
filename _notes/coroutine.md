@@ -56,6 +56,19 @@ Dispatchers.IO       // lots of blocking IO (like reading from a socket)
 block:  CoroutineScope.() -> Unit
 block: suspend CoroutineScope.() -> Unit
 
+## Channels
+pub/sub
+
+channel.send(user)
+
+val user = channel.receive()
+
+
+
+
+
+
+
     What coroutines are/What problems they solve
     Coroutine Builders/Adapting APIs that use callbacks
     Launch vs async
